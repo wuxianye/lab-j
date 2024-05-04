@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,13 +25,10 @@ int main(void) {
 	t = time(NULL);
 	local = localtime(&t);
 	char date[20];
-	strftime(date, 20, "%b %d %Y", local); 
+	strftime(date, 20, "%b %e %Y", local); 
 	fprintf(fptr, "%s", date);
 	
-	
-	
-	
-	
+
 	// Close and tidy up
 	fclose(fptr);
 	fptr = NULL;
