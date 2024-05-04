@@ -4,7 +4,7 @@
 #include <time.h>
 int main(void) {
 	// Set email address here
-	char email[] = "xianye.wu@student.manchester.ac.uk";
+	char email[] = "abc.def@student.manchester.ac.uk";
 	// 0pen file for writing
 	FILE* fptr;
 	fptr = fopen("certificate.txt", "w");
@@ -15,7 +15,7 @@ int main(void) {
 	
 	
 	// 0utput wanted text
-	fprintf(fptr, "Hello, My email address is:\n"); 
+	fprintf(fptr, "Hello. My email address is:\n"); 
 	fprintf(fptr, "%s\n", email);
 	fprintf(fptr, "I completed the course on ");
 
